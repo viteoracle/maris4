@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-step Signup Form</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+        }
+        .form-step {
+            display: none;
+        }
+        .form-step.active {
+            display: block;
+        }
+        .btn-custom {
+            border-radius: 30px;
+            padding: 0.5rem 2rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #000;
+            color: #fff;
+        }
+        .navbar {
+            margin-bottom: 30px;
+        }
+       
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Signup Form</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Image Banner and Introduction Text -->
+<div class="container">
+    <img src="data:image/jpeg;base64,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" alt="Banner" class="image-banner">
+    <h3 class="text-center mb-4">Welcome to the Multi-step Signup Form</h3>
+    <p class="text-center mb-5">Please fill in the details below to create your account. Each step is designed to gather essential information.</p>
+
+    <!-- Multi-step Form -->
+    <div class="card shadow-sm">
+        <div class="card-header text-center bg-primary text-white">
+            <h4>Multi-step Signup Form</h4>
+        </div>
+        <div class="card-body">
+            <form id="multiStepForm">
+                <!-- Step 1 -->
+                <div class="form-step active" id="step-1">
+                    <h5 class="mb-4">Personal Information</h5>
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-custom" onclick="nextStep(1)">Next</button>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="form-step" id="step-2">
+                    <h5 class="mb-4">Account Information</h5>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" required>
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-custom" onclick="prevStep(2)">Previous</button>
+                    <button type="button" class="btn btn-primary btn-custom" onclick="nextStep(2)">Next</button>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="form-step" id="step-3">
+                    <h5 class="mb-4">Address Information</h5>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="address" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="country" class="form-label">Country</label>
+                        <input type="text" class="form-control" id="country" required>
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-custom" onclick="prevStep(3)">Previous</button>
+                    <button type="button" class="btn btn-success btn-custom" data-bs-toggle="modal" data-bs-target="#paymentModal">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Payment -->
+<div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="paymentModalLabel">Payment Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Please enter your payment details:</h6>
+                <div class="mb-3">
+                    <label for="cardNumber" class="form-label">Card Number</label>
+                    <input type="text" class="form-control" id="cardNumber" required>
+                </div>
+                <div class="mb-3">
+                    <label for="expiryDate" class="form-label">Expiry Date</label>
+                    <input type="month" class="form-control" id="expiryDate" required>
+                </div>
+                <div class="mb-3">
+                    <label for="cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="cvv" required>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="submitForm()">Confirm Payment</button>
+            </div>
+        </div>
+    </div>
+</div><br><br>
+
+<!-- Footer -->
+
+    <!-- Footer -->
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+          <div class="row">
+            <!-- About Section -->
+            <div class="col-md-3">
+              <h5>About Us</h5>
+              <p>We are a premier pageant organization dedicated to empowering women through elegance, grace, and competition. Join us to showcase your talent and become a symbol of strength and beauty.</p>
+            </div>
+      
+            <!-- Quick Links Section -->
+            <div class="col-md-3">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                <li><a href="howto.html" class="text-white text-decoration-none">Register</a></li>
+                <li><a href="mission.html" class="text-white text-decoration-none">About</a></li>
+                <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+              </ul>
+            </div>
+      
+            <!-- Contact Section -->
+            <div class="col-md-3">
+              <h5>Contact Us</h5>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-envelope-fill"></i> email@pageant.com</li>
+                <li><i class="bi bi-telephone-fill"></i> +234 8103010419</li>
+                <li><i class="bi bi-house-door-fill"></i> Abuja, Nigeria</li>
+              </ul>
+            </div>
+      
+            <!-- Subscribe Section -->
+            <div class="col-md-3">
+              <h5>Subscribe to Our News</h5>
+              <form id="subscribeForm">
+                <div class="mb-3">
+                  <label for="emailInput" class="form-label">Enter your email</label>
+                  <input type="email" class="form-control" id="emailInput" placeholder="Your email address" required>
+                </div>
+                <button type="submit" class="btn btn-light">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <hr class="my-4">
+      
+          <!-- Scrollable News Section -->
+          <div class="overflow-auto" style="max-height: 200px;">
+            <h5>Latest News</h5>
+            <div id="newsUpdates">
+              <p><strong>January 2025:</strong> Join us for the upcoming pageant competition! <a href="contact.html" class="text-white text-decoration-none"><strong style="color: orange;">Register Now</strong> </a></p>
+              <p><strong>December 2024:</strong> Our winners from the last event are now public icons! Learn more about them.</p>
+              <p><strong>November 2024:</strong> New dates for the next pageant season! Check out the schedule.</p>
+              <p><strong>October 2024:</strong> Our pageant workshops are starting soon! Sign up for a free session.</p>
+              <!-- Add more news items here -->
+            </div>
+          </div>
+      <!-- Social Media Section -->
+    <section class="py-3 bg-dark text-center">
+        <h5 class="fw-bold text-light">Follow Us</h5>
+        <p class="text-muted mb-3">Stay connected with us on social media</p>
+        <!-- Social Media Icons -->
+        <div>
+            <a href="https://www.facebook.com/sweetsoundempire" target="_blank" class="mx-2">
+                <i class="bi bi-facebook text-light fs-4"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="mx-2">
+                <i class="bi bi-twitter text-light fs-4"></i>
+            </a>
+            <a href="
+            https://www.instagram.com/sweetsoundempire?igsh=NTc4MTIwNjQ2YQ==" target="_blank" class="mx-2">
+                <i class="bi bi-instagram text-light fs-4"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="mx-2">
+                <i class="bi bi-linkedin text-light fs-4"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="mx-2">
+                <i class="bi bi-youtube text-light fs-4"></i>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Bootstrap Icons -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" 
+        rel="stylesheet">
+    
+          <hr class="my-4">
+          <div class="text-center">
+            <p>&copy; 2025 Pageant Organization. All Rights Reserved.</p>
+            <p><a href="#privacy-policy" class="text-white text-decoration-none">Privacy Policy</a> | <a href="#terms-of-service" class="text-white text-decoration-none">Terms of Service</a></p>
+          </div>
+        </div>
+      </footer>
+<div class="footer">
+    <p>&copy; 2025 Multi-step Signup Form. All rights reserved.</p>
+</div>
+
+<!-- Bootstrap 5 JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    let currentStep = 1;
+
+    // Show the specific step and hide the others
+    function showStep(step) {
+        document.querySelectorAll('.form-step').forEach((el) => {
+            el.classList.remove('active');
+        });
+        document.getElementById(`step-${step}`).classList.add('active');
+    }
+
+    // Move to the next step
+    function nextStep(step) {
+        if (step === 1) {
+            const email = document.getElementById('email').value;
+            if (!email) {
+                alert('Please fill in the email!');
+                return;
+            }
+        } else if (step === 2) {
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            if (!password || !confirmPassword) {
+                alert('Please fill in both password fields!');
+                return;
+            }
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+        }
+        currentStep++;
+        showStep(currentStep);
+    }
+
+    // Move to the previous step
+    function prevStep(step) {
+        currentStep--;
+        showStep(currentStep);
+    }
+
+    // Handle form submission
+    function submitForm() {
+        alert('Payment confirmed and form submitted!');
+        // Close modal after submission
+        var paymentModal = new bootstrap.Modal(document.getElementById('paymentModal'));
+        paymentModal.hide();
+    }
+
+    // Initial display of step 1
+    showStep(currentStep);
+</script>
+
+</body>
+</html>
