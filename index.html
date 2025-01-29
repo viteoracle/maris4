@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             width: 100%;
-            overflow-x: hidden;
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
         body {
@@ -19,6 +19,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            
         }
 
         header {
@@ -27,7 +28,7 @@
         }
 
         .hero {
-            background: url('https://source.unsplash.com/1600x900/?pageant,beauty') no-repeat center center/cover;
+            background: url('https://media.gettyimages.com/id/98844671/photo/side-view-of-woman-with-metallic-make-up.jpg?s=612x612&w=gi&k=20&c=JQ7NoeB3pk5O64T5qPX9j4s2xrc_h9JU_ooGyPG6acQ=') no-repeat center center/cover;
             color: white;
             text-align: center;
             padding: 100px 20px;
@@ -45,20 +46,16 @@
         .card:hover {
             transform: scale(1.05);
         }
-
         .icon-box {
             transition: transform 0.3s ease-in-out;
         }
-
         .icon-box:hover {
             transform: scale(1.1);
         }
-
         .icon {
             font-size: 2.5rem;
             color: #0d6efd;
         }
-
         footer {
             background-color: #343a40;
             color: white;
@@ -84,7 +81,7 @@
             background: #f8f9fa;
             padding: 50px 20px;
         }
-
+        /* Button for toggling the chat */
         .chat-toggle-btn {
             position: fixed;
             bottom: 20px;
@@ -99,6 +96,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
+        /* Modal Styles */
         .modal-dialog {
             max-width: 400px;
             margin: 0;
@@ -168,8 +166,10 @@
 <body>
     <!-- Header -->
     <header class="text-white text-center py-3">
+       
         <h1>Welcome to the Annual Beauty Pageant</h1>
-        <img src="https://source.unsplash.com/100x100/?logo,crown" alt="Logo" width="100" height="100" class="mb-3">
+        <img src="https://mail.google.com/mail/u/0?ui=2&ik=ffd818b2e1&attid=0.1&permmsgid=msg-f:1822563415090774369&th=194b0bc5091bc161&view=att&zw&disp=safe" alt="Logo" width="100" height="100" class="mb-3">
+  
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -202,7 +202,7 @@
         <section id="about" data-aos="fade-right">
             <h2 class="section-title">About the Pageant</h2>
             <p>
-                The SweetSound Beauty Pageant is more than just a competition; it's a celebration of grace, intelligence, and empowerment.
+                The SweetSound Beauty Pageant is more than just a competition; it’s a celebration of grace, intelligence, and empowerment.
             </p>
         </section>
 
@@ -210,9 +210,10 @@
         <section id="contestants" class="mt-5">
             <h2 class="section-title" data-aos="fade-left">Meet the Contestants</h2>
             <div class="row" data-aos="fade-up">
+                <!-- Example Contestant -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://source.unsplash.com/400x300/?beauty,pageant" class="card-img-top" alt="Contestant 1">
+                        <img src="https://gbaramatuvoicenews.com/wp-content/uploads/2020/09/images-39.jpeg" class="card-img-top" alt="Contestant 1">
                         <div class="card-body text-center">
                             <h5 class="card-title">Contestant 1</h5>
                             <p class="card-text">Brief description of Contestant 1.</p>
@@ -221,164 +222,278 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://source.unsplash.com/400x300/?model,fashion" class="card-img-top" alt="Contestant 2">
+                        <img src="https://media.istockphoto.com/id/172281008/photo/black-princess.jpg?s=612x612&w=0&k=20&c=g2gGM-j3q9aX7TAext57wy4PRuREJBTCWmEMGV3GO2M=" class="card-img-top" alt="Contestant 1">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Contestant 2</h5>
-                            <p class="card-text">Brief description of Contestant 2.</p>
+                            <h5 class="card-title">Contestant 1</h5>
+                            <p class="card-text">Brief description of Contestant 1.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://source.unsplash.com/400x300/?portrait,elegance" class="card-img-top" alt="Contestant 3">
+                        <img src="https://gbaramatuvoicenews.com/wp-content/uploads/2020/09/images-39.jpeg" class="card-img-top" alt="Contestant 1">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Contestant 3</h5>
-                            <p class="card-text">Brief description of Contestant 3.</p>
+                            <h5 class="card-title">Contestant 1</h5>
+                            <p class="card-text">Brief description of Contestant 1.</p>
                         </div>
                     </div>
                 </div>
+                
+                <!-- Add more contestants as needed -->
             </div>
         </section>
 
         <!-- Testimonials -->
         <section class="testimonials mt-5" id="testimonials" data-aos="fade-up">
-            <h2 class="section-title"><strong style="color: orange; font-style: italic; font-size: x-large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">People's Opinion</strong></h2>
+            <h2 class="section-title"><strong style="color: orange; font-style: italic; font-size: x-large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">People's Opinion</strong> </h2>
             <div class="row">
                 <div class="col-md-4">
                     <blockquote class="blockquote">
-                        <p style="font-style: italic; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; opacity: 0.6;">"Being a part of this pageant was a life-changing experience. I've gained so much confidence, learned valuable skills, and made lifelong friends. It's not just about the competition, it's about growing and discovering what I'm truly capable of!"</p>
-                        <footer class="blockquote-footer">– Emily, Contestant & Winner of 2024</footer>
+                        <p style="font-style: italic; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; opacity: 0.6;">"Being a part of this pageant was a life-changing experience. I’ve gained so much confidence, learned valuable skills, and made lifelong friends. It’s not just about the competition, it’s about growing and discovering what I’m truly capable of!"
+                           </p>
+                        <footer class="blockquote-footer"> – Emily, Contestant & Winner of 2024</footer>
                     </blockquote>
                 </div>
                 <div class="col-md-4">
                     <blockquote class="blockquote">
-                        <p style="font-style: italic; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; opacity: 0.6;">"Supporting this pageant has been a rewarding investment for our brand. It's inspiring to see young women showcasing their talents and ambition. We're proud to be part of an event that highlights the beauty of diversity, confidence, and leadership."</p>
-                        <footer class="blockquote-footer">– Engr Victor, CEO of VITCO LINK</footer>
+                        <p style="font-style: italic; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; opacity: 0.6;">"Supporting this pageant has been a rewarding investment for our brand. It's inspiring to see young women showcasing their talents and ambition. We're proud to be part of an event that highlights the beauty of diversity, confidence, and leadership."
+                            </p>
+                        <footer class="blockquote-footer">– Engr Victor, CEO of VITCO LINK </footer>
                     </blockquote>
                 </div>
                 <div class="col-md-4">
                     <blockquote class="blockquote">
-                        <p style="font-style: italic; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; opacity: 0.6;">"Partnering with this pageant has been an incredible experience for our brand. We're proud to support such an inspiring event that brings together strong, talented individuals who represent the future of beauty and leadership. It's an honor to be part of their journey."</p>
+                        <p style="font-style: italic; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; opacity: 0.6;">"Partnering with this pageant has been an incredible experience for our brand. We’re proud to support such an inspiring event that brings together strong, talented individuals who represent the future of beauty and leadership. It’s an honor to be part of their journey."
+                            </p>
                         <footer class="blockquote-footer">– Mrs Mariam O.E, Executive at Maris Energy</footer>
                     </blockquote>
                 </div>
+                <!-- Add more testimonials -->
             </div>
         </section>
 
-        <!-- Sponsors -->
-        <section id="sponsors" class="mt-5">
-            <div class="container">
-                <h2 class="text-center section-title" data-aos="fade-right">Our Sponsors</h2>
-                <p class="text-center">We are proudly sponsored by leading brands worldwide.</p>
-                <div class="row text-center mt-4">
-                    <div class="col-6 col-md-3 mb-4" data-aos="fade-up">
-                        <img src="https://source.unsplash.com/200x100/?logo,brand" class="img-fluid" alt="Sponsor 1 Logo">
-                    </div>
-                    <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-                        <img src="https://source.unsplash.com/200x100/?company,logo" class="img-fluid" alt="Sponsor 2 Logo">
-                    </div>
-                    <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                        <img src="https://source.unsplash.com/200x100/?business,logo" class="img-fluid" alt="Sponsor 3 Logo">
-                    </div>
-                    <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                        <img src="https://source.unsplash.com/200x100/?corporate,logo" class="img-fluid" alt="Sponsor 4 Logo">
-                    </div>
-                </div>
+       <!-- Sponsors -->
+<section id="sponsors" class="mt-5">
+    <div class="container">
+        <h2 class="text-center section-title" data-aos="fade-right">Our Sponsors</h2>
+        <p class="text-center">We are proudly sponsored by leading brands worldwide.</p>
+        <div class="row text-center mt-4">
+            <!-- Sponsor 1 -->
+            <div class="col-6 col-md-3 mb-4" data-aos="fade-up">
+                <img src="https://mail.google.com/mail/u/0?ui=2&ik=ffd818b2e1&attid=0.3&permmsgid=msg-f:1822563415090774369&th=194b0bc5091bc161&view=att&zw&disp=safe" class="img-fluid" alt="Sponsor 1 Logo">
             </div>
-        </section>
-
-        <!-- Why Choose Us Section -->
-        <section class="py-5 bg-light">
-            <div class="container">
-                <div class="text-center mb-4">
-                    <h2 class="fw-bold">Why Choose Us</h2>
+            <!-- Sponsor 2 -->
+            <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://mail.google.com/mail/u/0?ui=2&ik=ffd818b2e1&attid=0.5&permmsgid=msg-f:1822563415090774369&th=194b0bc5091bc161&view=att&zw&disp=safe" class="img-fluid" alt="Sponsor 2 Logo">
+            </div>
+            <!-- Sponsor 3 -->
+            <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://mail.google.com/mail/u/0?ui=2&ik=ffd818b2e1&attid=0.7&permmsgid=msg-f:1822563415090774369&th=194b0bc5091bc161&view=att&zw&disp=safe" class="img-fluid" alt="Sponsor 3 Logo">
+            </div>
+            
+            <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="700">
+                <img src="https://mail.google.com/mail/u/0?ui=2&ik=ffd818b2e1&attid=0.11&permmsgid=msg-f:1822559587208284203&th=194b0849c988482b&view=att&zw&disp=safe" class="img-fluid" alt="Sponsor 8 Logo">
+            </div>
+            <!-- Sponsor 8 -->
+            <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="700">
+                <img src="https://mail.google.com/mail/u/0?ui=2&ik=ffd818b2e1&attid=0.13&permmsgid=msg-f:1822559587208284203&th=194b0849c988482b&view=att&zw&disp=safe" class="img-fluid" alt="Sponsor 8 Logo">
+            </div>
+            <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="700">
+                <img src="https://mail.google.com/mail/u/0?ui=2&ik=ffd818b2e1&attid=0.21&permmsgid=msg-f:1822559587208284203&th=194b0849c988482b&view=att&zw&disp=safe" class="img-fluid" alt="Sponsor 8 Logo">
+            </div>
+            <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="700">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwDRPNgXHC6da6ey-jdhsujTBrZQjUjOcIew&s" class="img-fluid" alt="Sponsor 8 Logo">
+            </div>
+            <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="700">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAABKVBMVEXykR5TVFb9/f1RUlRVVljzkB70kh3ykh5YWVtHSEr1khxNUldcXV9QU1fHyMnylCD09fdrbG5iY2X6lBryjABwcXP5zaNIUVhmZ2nzmyHznSFDT1lLTE71rmdFRkjylyDS09Omp6nojSK1dzn3xJJ+f4HyhwD64cz0pCP0qSVZV1S8ezbfiSbNgjCgcEFwXk6PaUb89e21tbWAZEmbbkKtdDxsXlDGfzOHZkh4YUzahypeWVKWl5jj4+T52Lm4eTf0sCc0S1yndUCMjY7x5tvznDmVakT0qFL2t3jzokz61rPBm3E9Rk4wOkGZYipXST/3vYbnxaSxlXfTuJ/Kl2h6Wz3CvLfzp0DzmgD3rlO1hFirfkbRlFf1rGDIeRVRXWbKiThqaF59dmk9c/l7AAAdoklEQVR4nO1dC1fbSJa2o5eRrBhcTgojBycmEDA2kPAwYBLSpEMnvZmd7GN2Mtvbk5n9/z9i66F6qkoqGzo25+w9fU4TS5ZVn+796r6qVKvdWcI4Hp/XFyTJObj7CH6YhGBwM4TJosCCl+GiEXCWGIyOIFwUUg9KsUJweb44pcICB8GiQXCTEIyOs4VCVYc3D0Sx4trtgqGqp9OHgVUIrpMFQ/Vg2B2MDrNFQ1XPTh+CYkVga7G8TgQePwSs4uB48WqFCGvROLgIGA0Xr1b1tD6IF41EtYAJTBeNFMIqGT0ErK6XwAQRVpcPAaub/8fKVZYDq2T4IPjqdBmwghfRQ8Bqfxmwyk4ehH91uQRYJenkIWAVDpbAvUqOaw/ABJFinS3av0phMgUPI3Y+WWBGlEI1nVxk1w9BscLxggkL1rdCcJkNFw2Eg4SRv0ikUgRVLY5CcPwQ8jLgdpFliexsPybmF46ydLDsrLVAryHJ6reXgDEVOMoOll21wMViZsIEpueTmjQDhgMIl1y14kWwe4p0CiOlTn/gIDtabtUCP9rFShOYTQ/GISg4CuGgni11KuvHKhYCCg6P9gegiBQWFMwvdfL9xzEWMj04PdofIaBsxBTFw2y8vKqF5usfghPM6hcHk0FsB4pIvJ8dLq9qgZM/OILGOMGz2+tLxOblQNH7mWaTpVWtePiHWWHKcQqdcKL3M86mywrWH0TvmMfh8OJgfxSXMJRRwPLG0+D2nq2QqFN6dn46HsyMExEUT/hL6piCewUK4eRfnFxfYs9gDpzyW1rWeDqeey701UQFgimrH99MBmGJOrlZVziCMFhG3Yq35ss3yFARP/P4ZlypTvHEzeFE8fRSli3A0XyUxcBCONUPDyajHKe4THfCQZI5lU+XNZ4GU5vjUJIO9ClUWKHOt5D7xO0ObB3YwYjisyS9cFOtJY2n7Yrl+xa88OcpzFCEN1L9cXDz074dLHCELN4tlgmDZAn7/srTfka00IdJll1sjfTAJUJUU6IPManhpmdOJB8vYzwdT8r53QBXAutHkwjEQaReKoiPs3rNqg5s2s1KdE8+HcXTy6ZaVZOhr8GVZMPbcWzKrsTRBYT2oC6s5VFVOnXCYBnjaXCT2JhJAiyXFMJzM1IYjMMkLbEccMyeCtxyU62zpYunY5eUA4UzzaanAzNSmJEPk3pmbxUCN5IGO90ZmGTL1gfv6Gb5fpodTuyeeYi8gjq0F2aAHK2XnKd8B8XTy1XNdwQrhYeXNqVCEoWHSZnGhINU9uZgLbKeKgTH01uOObAfI25gwekElIwvDC+SUi7CeidJcuuoWjh9cXEzrs2VvLh/cUrQZCdhKdUS8k6H1vEQb1QBf+Qy9nBIlRomhyeTwRIAFh9UgeWnsKK/jGIBt2xnFTsKndYRxhP+NRypT29LCx0/QuJTWOE6pHW5jtcqXgLFcfg03/oTl0VXziWWAcfKc8SA1VEkilyXRXkU8T4sD5nrda3mGWnklXfOW9cGcm9UvmpSHU8bOxExiR2fLorEwjF+7CURMywEvpECF0vhJ7aUiqYgdRqgV8fT4NQSW6RJllwcjBdAYtEAMlhMUNUzExNJaMWjBOuNn9oiaMUbFb+UnlWpVmnbJrLJ5AyT2I+FK1YHoY0KmYvJZYha+adhRNJhvm/TlHiscSL7B6yIp8PKLihMYt6PTRGK2r02KPIve76ylX87IafaVuhS4hFXFn+lw4op1sWnqdbP+5VYoobCoJKSTHgY4YkQ0lPhjTm6ZrZEr6dkE2F5ASfwHEq/jjH5vYk6sbNBsZsp0/KohTyhfPyZ2csU3Zf4PN3Q9XlVua2KPJvD/f0RAhR1933p8SflyUoU8eXnWswBeaM9STxtpDSe7jBRv+rS2VOWEvpjRIsOfb/BwSrJ5WFBNsbM1WiF8Qj2rl4I+aChRbyNzteXuchKEgxcqplVk8T9i9rrgEfPdcvqOxGhywzIuZnJIQ/DYbr59pGQxyta1hXF0ztP2dGXsmpZnSxV7huLaomHClTi/6WbUEQMZAStOYbG3qgGljblwlHnGTv4bkf5rrVAJ4O9gGoZdxt9eTb0S8PdqNWKOMZ+ajqRLF7cfK6BpcyI6AfYsdcdedeZeOyiWIvoEES+UCqrVY5Aw09OzDcT1BBU4FyMB17HhYmNKl4RLOV3vvzMjn1Ufsopy5YOFxFQE/Ipxju+mbaxWin5E5Ke4j59LnludMUAlvitzTfs0CdlLgwDT78ZgyQV2enyHNy8ggZmjA0tiQQMS1irS6RCKEtN3lBv1F/ROUuGq/eBHXm6o35538kKyzOI4eDo7mgZXMFCsJs/ulvQ0k+O+gQUxU7y/gVkm5x3iDeKEPE+XF1dfSiCRY41GVavVB/L0cmqCHXCwU/3UKWNNLiQBYXGtlIEQqCZV4vqj0rACWsGaTHtwpV6qqseckY3V4tgIbjETKmlWsKRk/d+WqU4yX1EjioC+G9zXyn1CLjCIF7vMzCmym2LDlAKF/JGJde2bgZLENYv2qhxxOkAVlWoE0/vabqMWvwPghs4N00/efKXYdRnEGsuIz0tjHHMEhO4pgoFrpjA6m0zrL6qhKU4fnapzrWCQ3hfSQkKklAxkyHyamirhbSxxRgpHKhPHj1jBNTgl09fX376/WOng71RLxd83KRZgrAe72gagtTcs4r40cpQB93GvfWWIJ2SJjBTVQFNc/nRIOr2xbm6F+SBzuenr7l7+eu/fOl57W0qDYtmccJ6+6d/3enEskeKtHzNKvwCaVSFA7rN9N56S7AXLl16y0Bbec4paPWjFjdCvWU3/fMv3LfMAbjavMr/fOIZNUsQ1urq21e/foo7kp5k3uoji6z2mBVWhzp45YgxaJ1dMFBRS9It48pfHEojqEL85Pv9GlEAbWLvec+Lg3r7QgKrqFnCw2Ly6hfGXPEWdACrWEcpSIwconvZ6JTNhxJcSgDDwToGyLPKZ0PqY2kz58q2bWB2sLyG4cxXH6m3Bc7SarBcQh2SA3arfZdDxSEKxN9GtJTqDtKxVqCu5Fwp6EgRrIIZKrkIIWRaxGvUqsEqy3erYN21RTxSIxPERkGO1q3OW34DjoF6shwUGuzJAJauWYKwNPl1hzJNNVjQoUM8b2q0N246QaX3giIEeGd2lipQ4USNglYADhviBG+9AiuTZpUA/G6nhoOJSrCctnuNr0kLxh3WTCmcLqSffwoup1CBCnexbEmdWeE485vc49yURvXuWbTTmT75t9fK6J4g91QDq/nILk87+/hxPX6uCjfbHKzqUKfGNOsO1TIzVDUeINdCFGtQL6rBNSg7HoCQ6d4hGguDq/eCj/Jd1Inxhh8HnZ2vqmb5DdkMfV9Kca2+2W42mtsvJAr7/e+30wR+2USysrKZi8hdbFOvNBs4jDU3w3m9h8gGFRYW1IDBEYRpQ4rt6gk8wqsrQ9E2Tw97fIyfsBsOTrML9MQ7HyXlwmbY42AhZe1d8WMvVlaIV97b/MA19HUHgMHk5AzChBOCwOqK6qbbMo28IurYOUcgkKGqaE7sU6bH++VPM3UDziQbHp+gR8S7PHykeEKxSO4O+RRDwqZxS6ClcFbPF2yPDgkftdfkeLzshGEM4sH44BBmBLDNx+zYm82c3p2qOvENvVfobocsIVMJFXWkAvI/EF+eXiRZhp4vEQhhlv10FEdShcpv8nE/xVjhHRnyOSr+bAYLoSMU60mvLsTjnI6T8eieEWCgNr65yOAX/kie51jVodPI2drvioKeggDN9lnJSpUIBTV9bI8hQOYw3j89uL29PTk4vZ7g5ZY1IPcJek/4+GqkUp/tsy6Szq8yWDJncRfrhZKvqXtrkpayB4xV7O//zg68Zd9wdMtZCFtRKtYRaLWq1SqXoNsV2YUYCQIN4P8Thg/l8XEr/A8MFvLRBDkEfYtm8WTDqoqVZGxq2jT+yK602mQPyjFNxSkjcVMUKji/4HY+jpiDft92WMmN+x4bHqZbsJ8dSkPYeWXmLG6Fb3SwuGq9lsEKI05///mXYUZYv6TTVxEycbtTHBWiVS6qFbS6GNMAGaL51RFSCO03G8yiVv8McG5U2fiq81QCS5oNe4+lzzXVYgb6UVwn6PB8xqcOCEfXRxgwx9pqzAq17nbIdIo5UlYJalylgqhrAlfKjTeagoreenGop3A7XzkoDdnP4ojoUKHLMRyfiQt13jGsnu4EhMPA4Bq67kcm+NXpdEWjSufDAKlVJOlTvx8VtIsXgRrEKWUK8/xL/9vxT2q3lQCroXjwXBs3i2CxiPErt8OdlwyrVzz1HIKTzMlzknaNmWE+FCISeLoEPBHDPuDpKyF5ZxqyQDo6pllfRqeZNkF12DA1gi8Bq1cASzRCvO7I+5ElFRXD/G5FKmkGv1QWDZJcEFRFlkKqpn4Ykswzg0qQzOqfDuC01VWuzH0HzXXg39Epy/c5WJ9yNRAToVrcBwf6ozGKtJIynXO7Fl2DiFjmP0xd0sk481hvNgUjsyCvDZNRHPRlM955LYElaRYv568paOGYnV/uc+7Zhnwi/EUrwtZd1vDLTalOqmhCQLdFTFbWk/td6dfPvEZTihi5Krz4gjkBQctPFkqhaRb/zpXnK1BJcRCtXgQd5n1ojRBYZzKH4FDOft+h97QvwRW0DEwuScBtERFmU0plIc+IJZRX/0JvHdeA6MnczdLB4t95u8nLsDS9wY/8TKHZkSbCAg4u5dNYCjZmc+JVibjdRd0qbzVobRAEgnjru07JTBf+iz96OqUKZi7EhpvswLZHNQpB5StGTQJNMUOgibDYzrSfVa7hV7dQu0t3Epv87M66fDImbxQGFbo1VgwdQ5i6wF85VoXYkHtTbzeJUjFdFelT4pOaJ0IuoHr9NM2T3pW0csGlwK7uHFgk6G9shHGhmiGqyo++8rJy0Pr2N4FVQbN49P3o+aaHVCtHq8fjaBIa2iZCjkT1fmRqJfiOrbrIvOzErp2KuKjbNXQuCtXChawOCraDzjfAMw4mzZJ6AZ/7uBqPbdHbFPW0/wZKRPi5EyvCoLjIKjgbKP0Ic3pabPzIAkM3K8S0HdTAb4bWEZHJQ3B9/fzx418/vXukyP9ArWDhtfmx1aveJmmQX+PpvUdvvqBYRkyEv/7+TJHfmQ92mdVLH7W26+Nd1q0E+YQYdS0hswRVnxorOPSbhe5AYVQ2+XiRaKUwKa/8aPX5mxdvHksp+LcrEIXJsVr0kIT36YLzrPTlhyplIdKad7kdYuwwYKh1yz2H/kbul0ae4pEy1bqyDSuXz+gJa9UdkSYuyKrv4Q1wy8DKbwzvR1Y2keurHOdkeFJWluGw03wQbTDNC2iXTQGuzQq0PoPzRK9IW9FabXvEJ3IAq1YVT2ukMVcsLflYDJFa1xLt1LrdgOHI1NpvN9S7qOh1+BwPMg2sRtNSkn7rkxgouwQOYAWl8bTSTE3AsnRel4gpl2AImcmHKHqRLFREWo22Sl29hqGL5meW/PtbDE6+yGCRiGlz29Dt8KaXr5o6dAELv33KHk8XOhnnaKcxZanoga6WodHJjOdoiS0qcHm9D9rQX3/lldbP/e5A0iyWs+j1Xmgl+sftFVYDh2MXsIIwsXY8hDXdgZ51OtSSCJp0ZerCMY72Zdlt8WXq8tvN3uaTN6Lz790z5HI9e0XlI+K9mxdviFz1pOCyt7L9mOP1/EVjhZgggSs9e/nUIi+lIZfE06ZGehewBALleWVC5qwteUOQFRW9jVRQF8XN+/L3+NnXly+/Put3SBNfnC8iDPEU0uitIG9qxVdnB29l09/+cHW13d7cFGsR/QZm445N5Juyx9OyHTA7dMhFt3KOiuRkiwWuXJ2CbnF+LK48otTVZASGOIF2KxtuKb7+jgy3UXTT6h5uk/e0RCCKgIaVDaPkupPMbFyhadsNB98Bh8yR1INVfnJ/IxKelXJfBr1uNhvS1JiUjWqaNvVZtEQaDacuGaxA5j3xTIvRHYuNyK+qquwwCYKNXaNPb1qw4rfbTanVuqQPKp4g1Wo6okVC69TphsNxNjRspRC2DJGZq6PVrwxqckFk1cd8VTxiWNPWbipeV8l0E3S/4VKHyQ6LT4Be0H0/MkM8HZuWwbolS4ln5QJXEHQ30Kks26felb5HCiMr4XVBS4M+tu280lIMlwpQsatlA5cieniZJcWFW7FpIZKLZaMwkNxxq8xtYINibcnoL+2gNr3IZMVgM7t9OfTgmH6/FC55vU9yBBz6fnA8XdBB8waZVasTsQiIWqUhsxQGkn9saDcgr1n228qQ2T8NkzPPyvMFHCXU1VCOwFGsL0kzSDjIkoFe3vRNmpXczhLvYKfcGjHXdHch0qhLWnvUbheGSRQN6tsqY7tmD0iQnoW6lFbDOqsxVLb/FONpI2PNkf4zxYBkVISstM/6u7Lh8h9ttk1jJZ+mahc1cUTYP+Q1hAZbNOTK8tpgBXWFNah6UOHABNU8S/WN1GX2rAiE4vNcL5AOWZYvI7gUDtXnCeVlkxpcRtvki5RUtHRN0zdhtr3Uco59DQoBMh2U2TyR15VrXB7t+LJjpQs+yP33INIjplDJMCnwWGiMF3CkvmFTC/FQ7kc2r26bDywscvqKlJHtvB+Eu4S6KFhFslKl8Z35Mgjlwmyi+bWcuqzul1gZEFBbDPQFyxSeLXkTZnBo2eRg3h0zeMgsM7ANLkRdZNLxzGSliDdEPIeu19012bXu/hBbNJAVF6l+ReZFC9nLvWHxtW0PG5fVPmahLGUjK1UI+w/guku0Ak83NoLIHDEZBtJslsZAaV1wYGDv9IzFJsx6ckQGq+QVCNUItEyeuvFcFDBulJCVIkG4t2ehwOIGMxVg1aWyM9Iq65IHcMbiabJRnFnmyCsLBKLdXdd69Axgwd82or5Fs/TEOCGrsoAR8piAeadmQ0Tx9JQui7+2KtZdGmlwzipy0izEa5iBhlafQZZmOxmwbxhEZl+OkjUCYrvsR8KRNzJ8LUTxNO7SjEclO9jMXcCnwV/gwlmI4PHkGU+95nrlJvvrTRohBjVEXSaK552Lsutgi4Bo+BSoncNGW8Tl51oYlW7WOeceD5K7aHLdlVOjXTpqch/lroPfxlW/3PFGX9Qz01hY8qLglBqeQ05YrZZ2HVMEROLpwnbXisz1spVASVjZdIAfzLGkbXRIday22M49C+YdBSbqopuPGpyQInWRjFZgTFsWtQu/1Khm9Rro9ebYS7HgWRnTV+QA4nVupXkdDtmikbpkG+VbapqoC8XTDXOCWVM2siGItbu6oFwoni7sSqxKOnuR1cBSgRYy81NlzRBv1zRQl9dQNI4/Q4PahoPvNmdBoa50GJSVowrJm3DgV2A1axtNYJv/kA5p1BW0dpVxygk1yk2SrKtcJi2dJNQlXbW28c0S51K4+HNAzFfRD6XCFY8qZp8ZK9I4trWxeVBTsAkC9E/lBKUUhmc9Ie11/cbkvW1lBaUUUKYBjLqyfWBd38BF3hxmMKzY924mn7QqDESqxHQAk5V+qrqlFaau/E8jiUF5C3lEXeRq6BcwbJbcHIeLpBFvv7lU7rggrKp2J3Mq7vRFWr0yB0+pyziNSdk/Km1CXQ3z9JicKRu0kkkVR4w0ei8fGKKu5NClI5EKVi/T9vy6ZAOHnlCSvrLOeKoQjYp0C6RSfOM7Yqp1m+MF1Rwujq34Ve2JASpeo6ln1UsE75Q2mFbvPZm4URYKbEpzVvKggt29DfOhYuHQW39i97oQ6cjX7W5I6hqXbtjaaGaXDoRV4+mtuGoixOK6CzPiDJMzbToT16Nt+RWtvkQ8LovXhUWiLWLXEmeWbciNjBCFeUFZOyKXfE+5Sy+tLt669QMQsnK0wnxQxihY7bVgnpXXtgWM6TD3trj3IJLUhh4XDlWearCvpmWSh9RgkqR13/raSiZuO2HQeo5SaLH9ek4ryBYNyZswknVdkJVv462ELpnGF2OCW+9JoGl54wJ24tNpboEogLbfcsCcLLZ5ThVY6UyxTkXIjBHi9xbU9ookL9TBW5fVyWusmakLq0jBCaFWbtyHlPpYivnaqIvv/iVty1QK16wbxwd62VQ52FUHFfT39HYuVm/wmmsaURU/ydG6/VYkQPRLtSAsvrs6D3Yy5eVRkakDVuw9FA8Oi29JMMrsWx3Zqau/VxzUhkZdNGGA9EgPduo26vK//wYMMWeIqEufW1nfpd48U1iNXJOqrmBc16ZBK1xzphwMNdZo15SlUQyT3FuSelaGMhxot+vmRRA4WFDf1sQyDoYX12hd+yI9E4KbrGDMFrTm21SymAcoycWjQe1KJyNtWLcnSzXqynWt2OJCLozmXemFnbxrKR22TAogJ2qEWg0ujA6I8QYrXsRiFTWFSXJWJScj6uLnxv+we1UEH0Fd6M8cOeuWe12miVI/nKVTO+/0lLemCMF+MsOL1effJVGK/SxhoHzyxh61AoTbRlIRgbFpEtkkRzU7N7+hCpx+J7Yn5fzgvvX5E+oShUOkVi7vA2Hi+FZ0CwJ07rOQlXYuoS5srIF5/2VFCEzrSs4GHtZM+hKGQ6RTcoIZlvUE4UYvtjgrBluzqNVdV2ZS6iomYiz3ubexu4dONW/trYrXePLEV401mV6aUIivYWNdwio5LBkRpvl857gQXB7OolZ13Ap1Nwlae3uhC1T43O7798RazbvGK1gh3kL/afeamOwrAP9s4NoFB8v+WuWcrIgtxtFRcRKUxBD4zN/lkN8pIqtWFV/lp7aQOx/sYuqq2qfd86kTtq7nTrMj/WWXuBGT1qfzHsuSsl7EVxwhuE5hqQWafIdshoyPYfyUrLAdVp5a2yPuA4YrCCreALC+nhtgweuCmikSCsgDKDIdWif3QAp64nh/WHoH+H1khQ/vsqcDEtY8pWXeTXeKyIr93drbLXu3hNeWgp5CwJhmJ4Ln88QG40Cv0baWE8R2JmEcT6aZ3qarQmV0sly2YrECIMcxehFHP1UJg4Lu3j9s1Co8K/GB6pXB4YTuDSuy/by5Pv2nOSkibUOPtOoMyq//K2JlvrM7+A2BzlQIAQt1UbJSPgl2/zc1+qW+KWLUqCvNLi5BGITi8fAqCArdNgzrsJAF0kkoBPHWUOwF6jeKwFjDwvnfYxEVi/UWFwKR1V7x03hSIG8Cy5rZtV/TCorZ8Uj5sbw7IZuEpiifNe7HYHQCYWFXJCeo5lYs5F0Zw0D0sHWmR2y2ZzQMMCwokUJWqnhNtfrjNb4fX0qvsqdvz80DSLUAlfdVhzGoTS6y4gyowFOWnJlvs2BzlZ4dUjROIytJ4n3oNeVCRYGsNLjaIqAkuegkO7uu8Y2tsTMiveaEF1boyowwBOH4qA7NswpHqCztN1/bbYGstMMSdRXJSkZrimPAtdxL9/wnJrNUhBku8ydSmB6Nw/wd0FGSDsVSA5agxK12SKeiyZFf4lbR2a88oTxbIitgUFWEgcRLIDeae1Y2sKgruUZYypPeVmIXEjB6cpU/gcn5Pn5pdgxO1ZmdrKbtbwCkUjcXsNwB1d6JasRqttwMnpNFXaUcLoyS5FmZhbqSSKXaXlsPAy2C7K+tp3cSmE2Pti4H8QTI+/IAADZ2L/dPzmDmEixXYOW0x76CVreErDS4kN9pIysubAmDt7697gQVAcuUNkwRYHB6cXRwuj8ZY5lcnx6cH07h9+8WmipAVS83w5n9UcRG1YmY/NS+A1g0f+41nqx7606aleeii802FLGU7AkOEW5YvjfTtHSdnQaV8ocupUkfk2DKdFobIJlh+cnhAHqMrNYsDpaMVa5UnpwStIjYXaMSLhkhizGm01nf9UEiZgfOwiiRcyhmZaeC6+9PcgZCClaOgBz16F5XYfxK/2Tpimonp3T29zEwv6Wkz5acIHlWOINc6mW8PxPci1jejoBeOMNlDNvJ2vLYetkSYadwZ94qBUFg1973RzwrBbr3NuoKWu931VSNlbo8f63IU7b28Kbhc4st6mteGVraSti7JN6NzcP0QK1QDcuzfYZzSYJVe7+hb6Qu7LoaPjW2h9tWnBka5E1RNINL+afTpiN2tAJ9mTj9OCcr7dPIEEgHu+8phFpiC1OXfuv2iLGhLzCzNHvTYypcCKoyKpNS+nNksf4Pmj7i3/AppJoAAAAASUVORK5CYII=" class="img-fluid" alt="Sponsor 8 Logo">
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- Why Choose Us Section -->
+ <section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Why Choose Us</h2>
+            <p class="text-muted">
+                Discover what sets us apart and why we're the perfect choice for your needs.
+            </p>
+        </div>
+        <div class="row g-4">
+            <!-- Feature 1 -->
+            <div class="col-md-4">
+                <div class="text-center p-4 bg-white rounded shadow-lg icon-box">
+                    <div class="icon mb-3">
+                        <i class="bi bi-check-circle-fill"></i>
+                    </div>
+                    <h5 class="fw-bold">Authenticity:</h5>
                     <p class="text-muted">
-                        Discover what sets us apart and why we're the perfect choice for your needs.
+                        We are committed to authenticity in every aspect of our pageant, from the representation of diverse
+cultures to the selection of participants.
                     </p>
                 </div>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="text-center p-4 bg-white rounded shadow-lg icon-box">
-                            <div class="icon mb-3">
-                                <i class="bi bi-check-circle-fill"></i>
-                            </div>
-                            <h5 class="fw-bold">Authenticity:</h5>
-                            <p class="text-muted">
-                                We are committed to authenticity in every aspect of our pageant, from the representation of diverse cultures to the selection of participants.
-                            </p>
-                        </div>
+            </div>
+            <!-- Feature 2 -->
+            <div class="col-md-4">
+                <div class="text-center p-4 bg-white rounded shadow-lg icon-box">
+                    <div class="icon mb-3">
+                        <i class="bi bi-people-fill"></i>
                     </div>
-                    <div class="col-md-4">
-                        <div class="text-center p-4 bg-white rounded shadow-lg icon-box">
-                            <div class="icon mb-3">
-                                <i class="bi bi-people-fill"></i>
-                            </div>
-                            <h5 class="fw-bold">Professionalism:</h5>
-                            <p class="text-muted">
-                                Our team consists of experienced professionals dedicated to delivering a seamless and unforgettable pageant experience.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="text-center p-4 bg-white rounded shadow-lg icon-box">
-                            <div class="icon mb-3">
-                                <i class="bi bi-award-fill"></i>
-                            </div>
-                            <h5 class="fw-bold">Impact</h5>
-                            <p class="text-muted">
-                                By participating in Mr. & Miss Global Heritage, contestants not only showcase their talents but also contribute to a greater cause of promoting cultural understanding and unity.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-4">
-                    <a href="contact.html" class="btn btn-primary rounded-pill btn-lg">Contact Us Today</a>
+                    <h5 class="fw-bold">Professionalism:</h5>
+                    <p class="text-muted">
+                        Our team consists of experienced professionals dedicated to delivering a seamless and
+                        unforgettable pageant experience.
+                    </p>
                 </div>
             </div>
-        </section>
+            <!-- Feature 3 -->
+            <div class="col-md-4">
+                <div class="text-center p-4 bg-white rounded shadow-lg icon-box">
+                    <div class="icon mb-3">
+                        <i class="bi bi-award-fill"></i>
+                    </div>
+                    <h5 class="fw-bold">Impact</h5>
+                    <p class="text-muted">
+                        By participating in Mr. & Miss Global Heritage, contestants not only showcase their talents but also
+contribute to a greater cause of promoting cultural understanding and unity.   </p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="contact.html" class="btn btn-primary rounded-pill btn-lg">Contact Us Today</a>
+        </div>
+    </div>
+</section>
 
+<!-- Bootstrap JS CDN -->
+<script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+</script>
+<!-- Bootstrap Icons -->
+<link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" 
+    rel="stylesheet">
         <!-- FAQ Section -->
-        <section id="faq" class="mt-5">
-            <div class="container">
-                <h2 class="text-center section-title" data-aos="fade-right">Frequently Asked Questions</h2>
-                <p class="text-center">Find answers to some of the most common questions about the pageant.</p>
-                <div class="accordion mt-4" id="faqAccordion">
-                    <!-- FAQ 1 -->
-                    <div class="card" data-aos="fade-up">
-                        <div class="card-header" id="faqHeading1">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
-                                    1. What is the eligibility criteria to participate?
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="faq1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                Participants must be between the ages of 18 and 30, unmarried, and meet the specified requirements for height, health, and personal background. Full details can be found on the <a href="#register">registration page</a>.
-                            </div>
-                        </div>
+<section id="faq" class="mt-5">
+    <div class="container">
+        <h2 class="text-center section-title" data-aos="fade-right">Frequently Asked Questions</h2>
+        <p class="text-center">Find answers to some of the most common questions about the pageant.</p>
+        <div class="accordion mt-4" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="card" data-aos="fade-up">
+                <div class="card-header" id="faqHeading1">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                            1. What is the eligibility criteria to participate?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faq1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Participants must be between the ages of 18 and 30, unmarried, and meet the specified requirements for height, health, and personal background. Full details can be found on the <a href="#register">registration page</a>.
                     </div>
-
-                    <!-- FAQ 2 -->
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="card-header" id="faqHeading2">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">
-                                    2. How can I register for the pageant?
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="faq2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                You can register online by visiting the <a href="contact.html">registration page</a> and filling out the form. Ensure you upload all required documents and pay the registration fee before the deadline.
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Add more FAQ items as needed -->
                 </div>
             </div>
-        </section>
+
+            <!-- FAQ 2 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-header" id="faqHeading2">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                            2. How can I register for the pageant?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faq2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        You can register online by visiting the <a href="contact.html">registration page</a> and filling out the form. Ensure you upload all required documents and pay the registration fee before the deadline.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-header" id="faqHeading3">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                            3. What is the selection process like?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faq3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        The selection process involves an online application review, an audition round, and multiple stages of evaluation based on talent, communication skills, cultural representation, and overall confidence.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-header" id="faqHeading4">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                            4. Can I bring guests to the event?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faq4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Yes, attendees are welcome to bring guests. Tickets can be purchased through the <a href="#tickets">event tickets page</a>. Special seating arrangements can be requested during checkout.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-header" id="faqHeading5">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                            5. How do I vote for my favorite contestant?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faq5" class="collapse" aria-labelledby="faqHeading5" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Voting can be done through the <a href="vote.html">voting page</a>. Simply select your favorite contestant, submit your vote, and share with others to support them.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="500">
+                <div class="card-header" id="faqHeading6">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                            6. What are the prizes for the winners?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faq6" class="collapse" aria-labelledby="faqHeading6" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        The winners will receive cash prizes, sponsorship deals, media exposure, and an opportunity to work with global brands. Detailed prize information is provided on the <a href="#prizes">prizes page</a>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 7 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="600">
+                <div class="card-header" id="faqHeading7">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq7" aria-expanded="false" aria-controls="faq7">
+                            7. How can I become a sponsor?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faq7" class="collapse" aria-labelledby="faqHeading7" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        We welcome sponsorship inquiries! Please visit our <a href="#sponsors">sponsorship page</a> or contact us directly via email for more information.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
         <!-- CTA Section -->
         <section class="cta text-center my-5">
@@ -386,90 +501,10 @@
             <p>Don't miss out on the event of the year. Get your tickets today!</p>
             <a href="signin.html" class="btn btn-success btn-lg">Register Now</a>
         </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <!-- About Section -->
-                <div class="col-md-3">
-                    <h5>About Us</h5>
-                    <p>We are a premier pageant organization dedicated to empowering women through elegance, grace, and competition. Join us to showcase your talent and become a symbol of strength and beauty.</p>
-                </div>
-
-                <!-- Quick Links Section -->
-                <div class="col-md-3">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-                        <li><a href="howto.html" class="text-white text-decoration-none">Register</a></li>
-                        <li><a href="mission.html" class="text-white text-decoration-none">About</a></li>
-                        <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Section -->
-                <div class="col-md-3">
-                    <h5>Contact Us</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="mailto:mrandmissglobalheritage@gmail.com">mrandmissglobalheritage@gmail.com</a></li>
-                        <li><a href="mailto:sweetsoundempire@gmail.com">sweetsoundempire@gmail.com</a></li>
-                        <li><i class="bi bi-telephone-fill"></i> +234 8103010419</li>
-                        <li><i class="bi bi-house-door-fill"></i> Abuja, Nigeria</li>
-                    </ul>
-                </div>
-
-                <!-- Subscribe Section -->
-                <div class="col-md-3">
-                    <h5>Subscribe to Our News</h5>
-                    <form id="subscribeForm">
-                        <div class="mb-3">
-                            <label for="emailInput" class="form-label">Enter your email</label>
-                            <input type="email" class="form-control" id="emailInput" placeholder="Your email address" required>
-                        </div>
-                        <button type="submit" class="btn btn-light">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-            <hr class="my-4">
-
-            <!-- Social Media Section -->
-            <section class="py-3 bg-dark text-center">
-                <h5 class="fw-bold text-light">Follow Us</h5>
-                <p class="text-muted mb-3">Stay connected with us on social media</p>
-                <div>
-                    <a href="https://www.facebook.com/sweetsoundempire" target="_blank" class="mx-2">
-                        <i class="bi bi-facebook text-light fs-4"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank" class="mx-2">
-                        <i class="bi bi-twitter text-light fs-4"></i>
-                    </a>
-                    <a href="https://www.instagram.com/sweetsoundempire?igsh=NTc4MTIwNjQ2YQ==" target="_blank" class="mx-2">
-                        <i class="bi bi-instagram text-light fs-4"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" class="mx-2">
-                        <i class="bi bi-linkedin text-light fs-4"></i>
-                    </a>
-                    <a href="https://youtube.com" target="_blank" class="mx-2">
-                        <i class="bi bi-youtube text-light fs-4"></i>
-                    </a>
-                </div>
-            </section>
-
-            <hr class="my-4">
-            <div class="text-center">
-                <p>&copy; 2025 Pageant Organization. All Rights Reserved.</p>
-                <p><a href="#privacy-policy" class="text-white text-decoration-none">Privacy Policy</a> | <a href="#terms-of-service" class="text-white text-decoration-none">Terms of Service</a></p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll Up Button -->
+        <!-- Scroll Up Button -->
     <button id="scrollUpBtn" onclick="scrollToTop()">↑</button>
-
-    <!-- Chat Toggle Button -->
-    <button class="chat-toggle-btn" data-toggle="modal" data-target="#chatModal">
+     <!-- Chat Toggle Button -->
+     <button class="chat-toggle-btn" data-toggle="modal" data-target="#chatModal">
         💬
     </button>
 
@@ -479,7 +514,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="agent-info">
-                        <img src="https://source.unsplash.com/100x100/?portrait" alt="Agent Profile">
+                        <img src="https://mail.google.com/mail/u/0?ui=2&ik=ffd818b2e1&attid=0.1&permmsgid=msg-f:1822563891334338090&th=194b0c33eb6fd62a&view=att&zw&disp=safe" alt="Agent Profile">
                         <div>
                             <div class="name">Mariam Bashiru</div>
                             <div class="role">HRM</div>
@@ -500,14 +535,131 @@
         </div>
     </div>
 
-    <!-- Scripts -->
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer Section -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-md-3">
+          <h5>About Us</h5>
+          <p>We are a premier pageant organization dedicated to empowering women through elegance, grace, and competition. Join us to showcase your talent and become a symbol of strength and beauty.</p>
+        </div>
+  
+        <!-- Quick Links Section -->
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="howto.html" class="text-white text-decoration-none">Register</a></li>
+            <li><a href="mission.html" class="text-white text-decoration-none">About</a></li>
+            <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Section -->
+        <div class="col-md-3">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+          <!--   <li><i class="bi bi-envelope-fill"></i> email@pageant.com-->
+                <ul>
+                    <li> <a href="mrandmissglobalheritage@gmail.com">mrandmissglobalheritage@gmail.com</a></li>
+                    <li>
+                      <a href="sweetsoundempire@gmail.com">sweetsoundempire@gmail.com</a></li>
+                  </ul></li>
+            <li><i class="bi bi-telephone-fill"></i> +234 8103010419</li>
+            <li><i class="bi bi-house-door-fill"></i> Abuja, Nigeria</li>
+          </ul>
+        </div>
+  
+        <!-- Subscribe Section -->
+        <div class="col-md-3">
+          <h5>Subscribe to Our News</h5>
+          <form id="subscribeForm">
+            <div class="mb-3">
+              <label for="emailInput" class="form-label">Enter your email
+                
+              </label>
+              <input type="email" class="form-control" id="emailInput" placeholder="Your email address" required>
+            </div>
+            <button type="submit" class="btn btn-light">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <hr class="my-4">
+  
+      <!-- Scrollable News Section -->
+      <div class="overflow-auto" style="max-height: 200px;">
+        <h5>Latest News</h5>
+        <div id="newsUpdates">
+          <p><strong>January 2025:</strong> Join us for the upcoming pageant competition! <a href="contact.html" class="text-white text-decoration-none"><strong style="color: orange;">Register Now</strong> </a></p>
+          <p><strong>December 2024:</strong> Our winners from the last event are now public icons! Learn more about them.</p>
+          <p><strong>November 2024:</strong> New dates for the next pageant season! Check out the schedule.</p>
+          <p><strong>October 2024:</strong> Our pageant workshops are starting soon! Sign up for a free session.</p>
+          <!-- Add more news items here -->
+        </div>
+      </div>
+  <!-- Social Media Section -->
+<section class="py-3 bg-dark text-center">
+    <h5 class="fw-bold text-light">Follow Us</h5>
+    <p class="text-muted mb-3">Stay connected with us on social media</p>
+    <!-- Social Media Icons -->
+    <div>
+        <a href="https://www.facebook.com/sweetsoundempire" target="_blank" class="mx-2">
+            <i class="bi bi-facebook text-light fs-4"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="mx-2">
+            <i class="bi bi-twitter text-light fs-4"></i>
+        </a>
+        <a href="
+        https://www.instagram.com/sweetsoundempire?igsh=NTc4MTIwNjQ2YQ==" target="_blank" class="mx-2">
+            <i class="bi bi-instagram text-light fs-4"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="mx-2">
+            <i class="bi bi-linkedin text-light fs-4"></i>
+        </a>
+        <a href="https://youtube.com" target="_blank" class="mx-2">
+            <i class="bi bi-youtube text-light fs-4"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Bootstrap Icons -->
+<link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" 
+    rel="stylesheet">
+
+      <hr class="my-4">
+      <div class="text-center">
+        <p>&copy; 2025 Pageant Organization. All Rights Reserved.</p>
+        <p><a href="#privacy-policy" class="text-white text-decoration-none">Privacy Policy</a> | <a href="#terms-of-service" class="text-white text-decoration-none">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap and Bootstrap Icons CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  
+  <script>
+    // Handle subscription form submission
+    document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const email = document.getElementById('emailInput').value;
+      alert('Thank you for subscribing with ' + email + '!');
+      document.getElementById('emailInput').value = '';  // Clear the input
+    });
+  </script>
+  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
-
         // Scroll to top function
         function scrollToTop() {
             window.scrollTo({
@@ -525,12 +677,13 @@
                 scrollUpBtn.style.display = "none";
             }
         };
-
+    </script>
+    <script>
         // Predefined multiple responses
         const botResponses = [
-            "Did you find our service helpful?",
-            "Please drop your email and valid WhatsApp number, and our team will get in touch with you.",
-            "Could you please send your full name?",
+            "did u find our sevice helpful",
+            "drop ur email and valid whatsapp number our team will get in touch with u ",
+            "send your full name.",
             "Greetings! What can I do for you?"
         ];
 
@@ -573,15 +726,10 @@
             const randomIndex = Math.floor(Math.random() * botResponses.length);
             return botResponses[randomIndex];
         }
-
-        // Handle subscription form submission
-        document.getElementById('subscribeForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const email = document.getElementById('emailInput').value;
-            alert('Thank you for subscribing with ' + email + '!');
-            document.getElementById('emailInput').value = '';  // Clear the input
-        });
     </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
-
