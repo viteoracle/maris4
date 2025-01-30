@@ -225,7 +225,52 @@
             font-size: 2.5rem;
             margin-bottom: 20px;
         }
+        .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
 
+    .section {
+      margin: 40px 0;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    .mission, .vision {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .mission div, .vision div {
+      flex: 1;
+      min-width: 300px;
+      text-align: justify;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 4px;
+      background: #e67e22;
+      margin-top: 10px;
+    }
         footer {
             background-color: var(--dark-color);
             color: white;
@@ -309,12 +354,13 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+     <!-- Header -->
+     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Pageant Logo" width="50" height="50" class="d-inline-block align-top rounded-circle">
-                    <span class="ml-2">Global Heritage</span>
+                    <img src="./IMG_20240506_190038_279.jpeg" alt="Pageant Logo" width="50" height="50" class="d-inline-block align-top rounded-circle">
+                    <span class="ml-2 ">Global Heritage</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -328,16 +374,22 @@
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#contestants">Contestants</a>
+                            <a class="nav-link" href="#contestants">Contestants</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#schedule">Schedule</a>
+                            <a class="nav-link" href="vote.html">Vote</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#sponsors">Sponsors</a>
+                            <a class="nav-link" href="howto.html">How to</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#contact">Contact</a>
+                            <a class="nav-link" href="#schedule">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sponsors">Sponsors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="register.html">Register</a>
@@ -396,6 +448,129 @@
                 </div>
             </div>
         </section>
+        <div class="container">
+            <!-- Mission Section -->
+            <div class="section">
+              <h2>Our Mission</h2>
+              <div class="mission">
+                <div>
+                  <p style="opacity: 0.6;">Our mission is to celebrate cultural diversity, empower
+                    individuals, and foster global unity through the artistry of beauty pageantry. We provide a platform for contestants
+                    from diverse backgrounds to showcase their talents, celebrate their heritage, and promote positive change in their
+                    communities and beyond. Through our events and initiatives, we strive to inspire confidence, embrace diversity,
+                    and promote understanding and respect for all cultures.</p>
+                </div>
+                <div>
+                  <img src="https://alpha.uscreencdn.com/images/programs/2075458/horizontal/uj_wFA9xU2P3kg.jpg?auto=webp&width=350" alt="Mission Image">
+                </div>
+              </div>
+            </div>
+        
+            <!-- Vision Section -->
+            <div class="section">
+              <h2>Our Vision</h2>
+              <div class="vision">
+                <div>
+                  <img src="https://alpha.uscreencdn.com/images/programs/2075458/horizontal/uj_wFA9xU2P3kg.jpg?auto=webp&width=350" alt="Vision Image">
+                </div>
+                <div>
+                  <p style="opacity: 0.6;">Our vision is to create a world where cultural diversity is celebrated and cherished, and where individuals from all
+                    walks of life are empowered to reach their full potential. We envision Mr. & Miss Global Heritage Beauty Pageant
+                    as a global leader in promoting unity, diversity, and inclusivity through the beauty pageant platform. We aspire to
+                    be a catalyst for positive social change, fostering connections, understanding, and appreciation among people of
+                    different cultures, backgrounds, and perspectives.</p>
+                </div>
+              </div>
+            </div>
+         <!-- Vision Section -->
+         <div class="section">
+          <h2>Core Value</h2>
+          <div class="vision">
+            <div>
+              <img src="https://alpha.uscreencdn.com/images/programs/2075458/horizontal/uj_wFA9xU2P3kg.jpg?auto=webp&width=350" alt="Vision Image">
+            </div>
+            <div>
+              <p style="opacity: 0.6;"><strong style="color: orange;font-size: x-large;">Diversity:</strong> We celebrate and embrace the rich diversity of cultures, traditions, and identities represented by our
+                contestants and participants.<br><strong style="color: orange;font-size: x-large;"> Empowerment:</strong>
+                We empower individuals to express themselves, pursue their dreams, and make a positive impact
+                in their communities and the world.<br> <strong style="color: orange;font-size: x-large;"> Excellence:</strong>
+                We strive for excellence in all aspects of our organization, from event production to contestant support,
+                to provide an exceptional experience for all involved.<br><strong style="color: orange;font-size: x-large;"> Integrity:</strong>
+                We conduct ourselves with honesty, transparency, and integrity, adhering to the highest ethical
+                standards in everything we do.</p>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+          </div>
+          <br><center><h>WHAT WE STAND FOR</h></center>
+  <!-- Section: Picture and Write-Up -->
+  <section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Image Section -->
+            <div class="col-md-6 mb-4 mb-md-0 wow animate__animated animate__fadeInLeft">
+                <img 
+                    src="https://media.istockphoto.com/id/172281008/photo/black-princess.jpg?s=612x612&w=0&k=20&c=g2gGM-j3q9aX7TAext57wy4PRuREJBTCWmEMGV3GO2M=" 
+                    alt="Empowerment" 
+                    class="img-fluid rounded shadow-lg"
+                >
+            </div>
+            <!-- Write-Up Section -->
+            <div class="col-md-6 wow animate__animated animate__fadeInRight">
+                <h2 class="mb-3">Empowerment Through Elegance</h2>
+                <p class="text-muted">
+                 <strong style="color: orange;">Cultural Celebration:</strong>  We believe in the beauty of diversity and the importance of preserving and promoting
+                  cultural heritage.
+                </p>
+                <p class="text-muted">
+                    Whether you're competing for the crown or supporting the cause, there's a place 
+                    for everyone in our mission to inspire and uplift.
+                </p>
+                <a href="contact.html" class="btn btn-primary btn-lg rounded-pill mt-3">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section: Picture and Write-Up -->
+<section class="py-5 bg-light">
+  <div class="container">
+      <div class="row align-items-center">
+          <!-- Image Section -->
+          <div class="col-md-6 mb-4 mb-md-0 wow animate__animated animate__fadeInLeft">
+              <img 
+                  src="https://media.istockphoto.com/id/172281008/photo/black-princess.jpg?s=612x612&w=0&k=20&c=g2gGM-j3q9aX7TAext57wy4PRuREJBTCWmEMGV3GO2M=" 
+                  alt="Empowerment" 
+                  class="img-fluid rounded shadow-lg"
+              >
+          </div>
+          <!-- Write-Up Section -->
+          <div class="col-md-6 wow animate__animated animate__fadeInRight">
+              <h2 class="mb-3">Empowerment Through Elegance</h2>
+              <p class="text-muted">
+               <strong>Global Unity:</strong>  Discover the journey of confidence, poise, and purpose with our pageant. 
+                  We aim to empower individuals to showcase their talent, beauty, and intellect 
+                  while making a meaningful impact on the community. Join us to be part of something extraordinary.
+              </p>
+              <p class="text-muted">
+                Empowerment: We provide a stage for young individuals to express themselves, build confidence, and pursue their
+                dreams.<br>
+                 We strive to create connections and foster friendships among contestants, promoting solidarity and
+                understanding on a global scale.
+              </p>
+              <a href="contact.html" class="btn btn-primary btn-lg rounded-pill mt-3">
+                  Learn More
+              </a>
+          </div>
+      </div>
+  </div>
+</section>
+
     </main>
 
     <!-- Footer -->
@@ -421,8 +596,8 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <h5>Contact Us</h5>
-                    <p>Email: info@globalheritagepeageant.com</p>
-                    <p>Phone: +1 (123) 456-7890</p>
+                    <p>Email: mrandmissglobalheritage@gmail.com</p>
+                    <p>Phone: +234 8123324204</p>
                     <div class="social-icons mt-3">
                         <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -433,7 +608,7 @@
             </div>
             <hr>
             <div class="text-center">
-                <p>&copy; 2025 Global Heritage Pageant. All Rights Reserved.</p>
+                <p>&copy; 2025 Sweetsound Empire. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -452,4 +627,3 @@
     </script>
 </body>
 </html>
-
