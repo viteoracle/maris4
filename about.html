@@ -1,629 +1,1037 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Mr & Miss Global Heritage Pageant 2025</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #8E44AD;
-            --secondary-color: #F39C12;
-            --accent-color: #2ECC71;
-            --text-color: #2C3E50;
-            --light-color: #ECF0F1;
-            --dark-color: #34495E;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About - Mr & Miss Global Heritage Pageant 2025</title>
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <style>
+:root {
+    --primary-color: #8E44AD;
+    --secondary-color: #F39C12;
+    --accent-color: #2ECC71;
+    --text-color: #2C3E50;
+    --light-color: #ECF0F1;
+    --dark-color: #34495E;
+    
+    /* Add font variables */
+    --title-font: 'Cinzel', serif;
+    --heading-font: 'Cormorant Garamond', serif;
+    --body-font: 'Montserrat', sans-serif;
+}
 
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            overflow-x: hidden;
-        }
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            color: var(--text-color);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-color: var(--light-color);
-        }
+body {
+    font-family: var(--body-font);
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--light-color);
+}
 
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Playfair Display', serif;
-        }
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 
-        header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 15px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
 
-        .navbar-brand img {
-            max-height: 50px;
-            transition: transform 0.3s ease;
-        }
+.navbar-brand img {
+    max-height: 50px;
+    transition: transform 0.3s ease;
+}
 
-        .navbar-brand:hover img {
-            transform: scale(1.1);
-        }
+.navbar-brand:hover img {
+    transform: scale(1.1);
+}
 
-        .navbar-nav .nav-link {
-            color: white !important;
-            font-weight: 400;
-            padding: 10px 15px;
-            transition: all 0.3s ease;
-        }
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 400;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
 
-        .navbar-nav .nav-link:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 5px;
-        }
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
 
-        .navbar-toggler {
-            border-color: white;
-        }
+.navbar-toggler {
+    border-color: white;
+}
 
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        }
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
-        .hero {
-            position: relative;
-            color: white;
-            text-align: center;
-        }
+.hero {
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 80vh;
+    overflow: hidden;
+}
 
-        .hero-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            width: 100%;
-        }
+.carousel-item {
+    height: 80vh;
+    min-height: 500px;
+    transition: transform 1.2s ease-in-out !important;
+}
 
-        .carousel-item {
-            height: 100vh;
-            min-height: 350px;
-            background: no-repeat center center scroll;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
 
-        .carousel-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-        }
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    max-width: 800px;
+    margin: 0 auto;
+    width: 90%;
+    z-index: 2;
+}
 
-        .contestants-scroll {
-            overflow-x: hidden;
-            white-space: nowrap;
-            position: relative;
-            padding: 20px 0;
-        }
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards 0.3s;
+}
 
-        .contestants-inner {
-            display: inline-block;
-            white-space: nowrap;
-            animation: scroll 60s linear infinite;
-        }
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards 0.6s;
+}
 
-        .contestant-card {
-            display: inline-block;
-            width: 300px;
-            margin-right: 20px;
-        }
+.hero-content .btn-custom {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards 0.9s;
+}
 
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
+.btn-custom {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
 
-        /* Pause animation on hover */
-        .contestants-scroll:hover .contestants-inner {
-            animation-play-state: paused;
-        }
+.btn-custom:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    transition: all 0.5s ease;
+    z-index: -1;
+}
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 40px;
-            color: var(--primary-color);
-            font-size: 2.5rem;
-            font-weight: 700;
-        }
+.btn-custom:hover:before {
+    width: 100%;
+}
 
-        .card {
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: none;
-            border-radius: 15px;
-            overflow: hidden;
-        }
+.btn-custom:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    color: white;
+}
 
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: rgba(255,255,255,0.5);
+    transition: all 0.3s ease;
+}
 
-        .card-img-top {
-            height: 250px;
-            object-fit: cover;
-        }
+.carousel-indicators .active {
+    background-color: var(--secondary-color);
+    transform: scale(1.2);
+}
 
-        .card-body {
-            padding: 25px;
-        }
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    cursor: pointer;
+}
 
-        .card-title {
-            color: var(--primary-color);
-            font-weight: 700;
-        }
+.scroll-indicator i {
+    color: white;
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+}
 
-        .testimonials {
-            background-color: var(--dark-color);
-            color: white;
-            padding: 80px 0;
-        }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-        .testimonial-card {
-            background-color: rgba(255,255,255,0.1);
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 30px;
-        }
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
 
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 20px;
-        }
+/* Floating shapes animation */
+.floating-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
 
-        .testimonial-author {
-            font-weight: 700;
-            color: var(--secondary-color);
-        }
+.shape {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    animation: float 20s linear infinite;
+}
 
-        .sponsors {
-            padding: 80px 0;
-            background-color: white;
-        }
+.shape:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 10%;
+    animation-delay: 0s;
+}
 
-        .sponsor-logo {
-            max-width: 150px;
-            max-height: 80px;
-            filter: grayscale(100%);
-            transition: filter 0.3s;
-        }
+.shape:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    right: 15%;
+    animation-delay: -5s;
+}
 
-        .sponsor-logo:hover {
-            filter: grayscale(0%);
-        }
+.shape:nth-child(3) {
+    width: 60px;
+    height: 60px;
+    left: 30%;
+    top: 40%;
+    animation-delay: -10s;
+}
 
-        .cta {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
+@keyframes float {
+    0% {
+        transform: translateY(-100%) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(1000%) rotate(360deg);
+        opacity: 0;
+    }
+}
 
-        .cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        .container {
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 0 20px;
+@media (max-width: 768px) {
+    .hero,
+    .carousel-item {
+        height: 70vh;
+        min-height: 400px;
     }
 
-    .section {
-      margin: 40px 0;
-      padding: 20px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
     }
 
-    .section img {
-      width: 100%;
-      border-radius: 10px;
-      margin: 20px 0;
+    .hero-content {
+        padding: 1.5rem;
+    }
+}
+
+.contestants-scroll {
+    overflow-x: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 20px 0;
+}
+
+.contestants-inner {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 60s linear infinite;
+}
+
+.contestant-card {
+    display: inline-block;
+    width: 300px;
+    margin-right: 20px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Pause animation on hover */
+.contestants-scroll:hover .contestants-inner {
+    animation-play-state: paused;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.testimonials {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 80px 0;
+}
+
+.testimonial-card {
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.sponsors {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.sponsor-logo {
+    max-width: 150px;
+    max-height: 80px;
+  
+}
+
+.sponsor-logo:hover {
+    filter: grayscale(0%);
+}
+
+.cta {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 50px 0;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--secondary-color);
+}
+
+.timeline {
+    position: relative;
+    padding: 50px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: var(--primary-color);
+}
+
+.timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timeline-content {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.timeline-date {
+    background: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: rgba(142, 68, 173, 0.9);
+        padding: 15px;
+        border-radius: 5px;
     }
 
-    .mission, .vision {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+    .timeline::before {
+        left: 30px;
     }
 
-    .mission div, .vision div {
-      flex: 1;
-      min-width: 300px;
-      text-align: justify;
+    .timeline-item {
+        padding-left: 80px;
     }
+}
 
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-      position: relative;
-    }
+.navbar-brand {
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
 
-    h2::after {
-      content: '';
-      display: block;
-      width: 50px;
-      height: 4px;
-      background: #e67e22;
-      margin-top: 10px;
-    }
-        footer {
-            background-color: var(--dark-color);
-            color: white;
-            padding: 50px 0;
-        }
+.nav-link {
+    font-family: var(--body-font);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
 
-        footer a {
-            color: var(--secondary-color);
-            text-decoration: none;
-        }
+.hero-content h1 {
+    font-family: var(--title-font);
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
 
-        footer a:hover {
-            color: var(--accent-color);
-            text-decoration: underline;
-        }
+.hero-content p {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+}
 
-        .social-icons a {
-            color: white;
-            font-size: 1.5rem;
-            margin-right: 15px;
-            transition: color 0.3s;
-        }
+.section-title {
+    font-family: var(--title-font);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
-        .social-icons a:hover {
-            color: var(--secondary-color);
-        }
+.card-title {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
 
-        .timeline {
-            position: relative;
-            padding: 50px 0;
-        }
+.timeline-date {
+    font-family: var(--body-font);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
 
-        .timeline::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 2px;
-            height: 100%;
-            background: var(--primary-color);
-        }
+.timeline-content h4 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
 
-        .timeline-item {
-            margin-bottom: 50px;
-            position: relative;
-        }
+.testimonial-text {
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.8;
+}
 
-        .timeline-content {
-            background: white;
-            border-radius: 5px;
-            padding: 20px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
+.testimonial-author {
+    font-family: var(--body-font);
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
 
-        .timeline-date {
-            background: var(--secondary-color);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 20px;
-            display: inline-block;
-            margin-bottom: 15px;
-        }
+.btn-custom {
+    font-family: var(--body-font);
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
-        @media (max-width: 991.98px) {
-            .navbar-collapse {
-                background-color: rgba(142, 68, 173, 0.9);
-                padding: 15px;
-                border-radius: 5px;
-            }
+footer h5 {
+    font-family: var(--title-font);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
 
-            .timeline::before {
-                left: 30px;
-            }
+/* Add elegant transitions for links */
+a {
+    transition: all 0.3s ease;
+}
 
-            .timeline-item {
-                padding-left: 80px;
-            }
-        }
-    </style>
-     <script src="//code.jivosite.com/widget/XVBHPqC4MQ" async></script>
-</head>
-<body>
-    <!-- Header -->
-     <!-- Header -->
-     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./IMG_20240506_190038_279.jpeg" alt="Pageant Logo" width="50" height="50" class="d-inline-block align-top rounded-circle">
-                    <span class="ml-2 ">Global Heritage</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contestants">Contestants</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="vote.html">Vote</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="howto.html">How to</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#schedule">Schedule</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sponsors">Sponsors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="register.html">Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-                    </ul>
+/* Add subtle text shadow to important headings */
+.hero-content h1,
+.section-title {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Enhanced card title styling */
+.card-title {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.card-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.section {
+    padding: 40px 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-family: var(--title-font);
+}
+
+.mission, .vision, .core-values {
+    margin: 20px 0;
+}
+
+.mission-text, .vision-text {
+    flex: 1;
+    padding: 20px;
+    background-color: white; /* White background for text */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission-image, .vision-image {
+    flex: 0 0 350px; /* Fixed width for images */
+    margin: 10px;
+}
+
+.core-values {
+    justify-content: space-around; /* Space out core values */
+}
+
+.core-value {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: white; /* White background for core values */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text in core values */
+}
+
+.core-value h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.core-value p {
+    color: var(--text-color);
+}
+
+.what-we-stand-for {
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-family: var(--title-font);
+}
+
+.stand-for-card {
+    background-color: white; /* White background for cards */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.stand-for-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.stand-for-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.stand-for-card p {
+    color: var(--text-color);
+}
+</style>
+        <script src="//code.jivosite.com/widget/XVBHPqC4MQ" async></script>
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./IMG_20240506_190038_279.jpeg"
+                            alt="Pageant Logo" width="50" height="50"
+                            class="d-inline-block align-top rounded-circle">
+                    </a>
+                    <button class="navbar-toggler" type="button"
+                        data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="#contestants">Contestants</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="vote.html">Vote</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="howto.html">How to</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="#schedule">Schedule</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="#sponsors">Sponsors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="register.html">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <main>
-        <section class="py-5">
+        <main>
+            <section class="py-5">
+                <div class="container">
+                    <h2 class="section-title" data-aos="fade-up">About the
+                        Global Heritage Pageant</h2>
+                    <div class="row">
+                        <div class="col-md-6" data-aos="fade-up"
+                            data-aos-delay="100">
+                            <p>The Global Heritage Pageant is a celebration of
+                                diversity, culture, and beauty from around the
+                                world. Our mission is to empower individuals to
+                                become ambassadors of their heritage while
+                                promoting global unity and understanding.</p>
+                            <p>Founded in 2020, our pageant has grown to become
+                                one of the most prestigious international
+                                events, attracting contestants from over 100
+                                countries. We believe that by showcasing the
+                                rich tapestry of global cultures, we can foster
+                                greater appreciation and respect for our shared
+                                humanity.</p>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <img
+                                src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
+                                alt="Global Heritage Pageant"
+                                class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-4" data-aos="fade-up"
+                            data-aos-delay="300">
+                            <h3>Our Values</h3>
+                            <ul>
+                                <li>Celebrating Diversity</li>
+                                <li>Promoting Cultural Exchange</li>
+                                <li>Empowering Individuals</li>
+                                <li>Fostering Global Unity</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up"
+                            data-aos-delay="400">
+                            <h3>Our Impact</h3>
+                            <p>Through our pageant and associated programs, we
+                                have:</p>
+                            <ul>
+                                <li>Raised over $5 million for charitable
+                                    causes</li>
+                                <li>Supported education initiatives in 50+
+                                    countries</li>
+                                <li>Promoted cultural preservation projects
+                                    worldwide</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up"
+                            data-aos-delay="500">
+                            <h3>Get Involved</h3>
+                            <p>There are many ways to be a part of the Global
+                                Heritage Pageant:</p>
+                            <ul>
+                                <li>Become a contestant</li>
+                                <li>Volunteer at our events</li>
+                                <li>Sponsor the pageant</li>
+                                <li>Attend our global showcase</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up">About the Global Heritage Pageant</h2>
+                <!-- Mission Section -->
+                <div class="section">
+                    <h2 class="section-title" data-aos="fade-up">Our
+                        Mission</h2>
+                    <div
+                        class="mission d-flex flex-column flex-md-row align-items-center">
+                        <div class="mission-text" data-aos="fade-up"
+                            data-aos-delay="100">
+                            <p>Our mission is to celebrate cultural diversity,
+                                empower individuals, and foster global unity
+                                through the artistry of beauty pageantry. We
+                                provide a platform for contestants from diverse
+                                backgrounds to showcase their talents, celebrate
+                                their heritage, and promote positive change in
+                                their communities and beyond.</p>
+                        </div>
+                        <div class="mission-image" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <img
+                                src="https://alpha.uscreencdn.com/images/programs/2075458/horizontal/uj_wFA9xU2P3kg.jpg?auto=webp&width=350"
+                                alt="Mission Image"
+                                class="img-fluid rounded shadow-lg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vision Section -->
+                <div class="section">
+                    <h2 class="section-title" data-aos="fade-up">Our Vision</h2>
+                    <div
+                        class="vision d-flex flex-column flex-md-row align-items-center">
+                        <div class="vision-image" data-aos="fade-up"
+                            data-aos-delay="100">
+                            <img
+                                src="https://alpha.uscreencdn.com/images/programs/2075458/horizontal/uj_wFA9xU2P3kg.jpg?auto=webp&width=350"
+                                alt="Vision Image"
+                                class="img-fluid rounded shadow-lg">
+                        </div>
+                        <div class="vision-text" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <p>Our vision is to create a world where cultural
+                                diversity is celebrated and cherished, and where
+                                individuals from all walks of life are empowered
+                                to reach their full potential. We aspire to be a
+                                catalyst for positive social change, fostering
+                                connections, understanding, and appreciation
+                                among people of different cultures, backgrounds,
+                                and perspectives.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Value Section -->
+                <div class="section">
+                    <h2 class="section-title" data-aos="fade-up">Core
+                        Values</h2>
+                    <div class="core-values d-flex flex-column flex-md-row">
+                        <div class="core-value" data-aos="fade-up"
+                            data-aos-delay="100">
+                            <h3>Diversity</h3>
+                            <p>We celebrate and embrace the rich diversity of
+                                cultures, traditions, and identities represented
+                                by our contestants and participants.</p>
+                        </div>
+                        <div class="core-value" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <h3>Empowerment</h3>
+                            <p>We empower individuals to express themselves,
+                                pursue their dreams, and make a positive impact
+                                in their communities and the world.</p>
+                        </div>
+                        <div class="core-value" data-aos="fade-up"
+                            data-aos-delay="300">
+                            <h3>Excellence</h3>
+                            <p>We strive for excellence in all aspects of our
+                                organization, providing an exceptional
+                                experience for all involved.</p>
+                        </div>
+                        <div class="core-value" data-aos="fade-up"
+                            data-aos-delay="400">
+                            <h3>Integrity</h3>
+                            <p>We conduct ourselves with honesty, transparency,
+                                and integrity, adhering to the highest ethical
+                                standards in everything we do.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- WHAT WE STAND FOR Section -->
+            <section class="what-we-stand-for py-5 bg-light">
+                <div class="container text-center">
+                    <h2 class="section-title" data-aos="fade-up">WHAT WE STAND
+                        FOR</h2>
+                    <div class="row">
+                        <div class="col-md-4" data-aos="fade-up"
+                            data-aos-delay="100">
+                            <div class="stand-for-card">
+                                <h3>Diversity</h3>
+                                <p>We celebrate the rich tapestry of cultures
+                                    and traditions that make our world
+                                    unique.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div class="stand-for-card">
+                                <h3>Empowerment</h3>
+                                <p>We empower individuals to express themselves
+                                    and pursue their dreams with confidence.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up"
+                            data-aos-delay="300">
+                            <div class="stand-for-card">
+                                <h3>Integrity</h3>
+                                <p>We uphold the highest ethical standards in
+                                    all our endeavors, fostering trust and
+                                    respect.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <p>The Global Heritage Pageant is a celebration of diversity, culture, and beauty from around the world. Our mission is to empower individuals to become ambassadors of their heritage while promoting global unity and understanding.</p>
-                        <p>Founded in 2020, our pageant has grown to become one of the most prestigious international events, attracting contestants from over 100 countries. We believe that by showcasing the rich tapestry of global cultures, we can foster greater appreciation and respect for our shared humanity.</p>
+                    <div class="col-md-4 mb-4">
+                        <h5>About Us</h5>
+                        <p>Global Heritage Pageant celebrates diversity,
+                            empowers individuals, and promotes cultural
+                            understanding on a global scale.</p>
                     </div>
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Global Heritage Pageant" class="img-fluid rounded">
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <h3>Our Values</h3>
-                        <ul>
-                            <li>Celebrating Diversity</li>
-                            <li>Promoting Cultural Exchange</li>
-                            <li>Empowering Individuals</li>
-                            <li>Fostering Global Unity</li>
+                    <div class="col-md-4 mb-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a
+                                    href="index.html#contestants">Contestants</a></li>
+                            <li><a href="index.html#schedule">Schedule</a></li>
+                            <li><a href="index.html#sponsors">Sponsors</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                            <li><a href="register.html">Register</a></li>
+                            <li><a href="login.html">Login</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-                        <h3>Our Impact</h3>
-                        <p>Through our pageant and associated programs, we have:</p>
-                        <ul>
-                            <li>Raised over $5 million for charitable causes</li>
-                            <li>Supported education initiatives in 50+ countries</li>
-                            <li>Promoted cultural preservation projects worldwide</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
-                        <h3>Get Involved</h3>
-                        <p>There are many ways to be a part of the Global Heritage Pageant:</p>
-                        <ul>
-                            <li>Become a contestant</li>
-                            <li>Volunteer at our events</li>
-                            <li>Sponsor the pageant</li>
-                            <li>Attend our global showcase</li>
-                        </ul>
+                    <div class="col-md-4 mb-4">
+                        <h5>Contact Us</h5>
+                        <p>Email: mrandmissglobalheritage@gmail.com</p>
+                        <p>Phone: +234 8123324204</p>
+                        <div class="social-icons mt-3">
+                            <a href="#" target="_blank"><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <div class="container">
-            <!-- Mission Section -->
-            <div class="section">
-              <h2>Our Mission</h2>
-              <div class="mission">
-                <div>
-                  <p style="opacity: 0.6;">Our mission is to celebrate cultural diversity, empower
-                    individuals, and foster global unity through the artistry of beauty pageantry. We provide a platform for contestants
-                    from diverse backgrounds to showcase their talents, celebrate their heritage, and promote positive change in their
-                    communities and beyond. Through our events and initiatives, we strive to inspire confidence, embrace diversity,
-                    and promote understanding and respect for all cultures.</p>
+                <hr>
+                <div class="text-center">
+                    <p>&copy; 2025 Sweetsound Empire. All Rights Reserved.</p>
                 </div>
-                <div>
-                  <img src="https://alpha.uscreencdn.com/images/programs/2075458/horizontal/uj_wFA9xU2P3kg.jpg?auto=webp&width=350" alt="Mission Image">
-                </div>
-              </div>
             </div>
-        
-            <!-- Vision Section -->
-            <div class="section">
-              <h2>Our Vision</h2>
-              <div class="vision">
-                <div>
-                  <img src="https://alpha.uscreencdn.com/images/programs/2075458/horizontal/uj_wFA9xU2P3kg.jpg?auto=webp&width=350" alt="Vision Image">
-                </div>
-                <div>
-                  <p style="opacity: 0.6;">Our vision is to create a world where cultural diversity is celebrated and cherished, and where individuals from all
-                    walks of life are empowered to reach their full potential. We envision Mr. & Miss Global Heritage Beauty Pageant
-                    as a global leader in promoting unity, diversity, and inclusivity through the beauty pageant platform. We aspire to
-                    be a catalyst for positive social change, fostering connections, understanding, and appreciation among people of
-                    different cultures, backgrounds, and perspectives.</p>
-                </div>
-              </div>
-            </div>
-         <!-- Vision Section -->
-         <div class="section">
-          <h2>Core Value</h2>
-          <div class="vision">
-            <div>
-              <img src="https://alpha.uscreencdn.com/images/programs/2075458/horizontal/uj_wFA9xU2P3kg.jpg?auto=webp&width=350" alt="Vision Image">
-            </div>
-            <div>
-              <p style="opacity: 0.6;"><strong style="color: orange;font-size: x-large;">Diversity:</strong> We celebrate and embrace the rich diversity of cultures, traditions, and identities represented by our
-                contestants and participants.<br><strong style="color: orange;font-size: x-large;"> Empowerment:</strong>
-                We empower individuals to express themselves, pursue their dreams, and make a positive impact
-                in their communities and the world.<br> <strong style="color: orange;font-size: x-large;"> Excellence:</strong>
-                We strive for excellence in all aspects of our organization, from event production to contestant support,
-                to provide an exceptional experience for all involved.<br><strong style="color: orange;font-size: x-large;"> Integrity:</strong>
-                We conduct ourselves with honesty, transparency, and integrity, adhering to the highest ethical
-                standards in everything we do.</p>
-            </div>
-          </div>
-        </div>
-        
-        
-        
-        
-          </div>
-          <br><center><h>WHAT WE STAND FOR</h></center>
-  <!-- Section: Picture and Write-Up -->
-  <section class="py-5 bg-light">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Image Section -->
-            <div class="col-md-6 mb-4 mb-md-0 wow animate__animated animate__fadeInLeft">
-                <img 
-                    src="https://media.istockphoto.com/id/172281008/photo/black-princess.jpg?s=612x612&w=0&k=20&c=g2gGM-j3q9aX7TAext57wy4PRuREJBTCWmEMGV3GO2M=" 
-                    alt="Empowerment" 
-                    class="img-fluid rounded shadow-lg"
-                >
-            </div>
-            <!-- Write-Up Section -->
-            <div class="col-md-6 wow animate__animated animate__fadeInRight">
-                <h2 class="mb-3">Empowerment Through Elegance</h2>
-                <p class="text-muted">
-                 <strong style="color: orange;">Cultural Celebration:</strong>  We believe in the beauty of diversity and the importance of preserving and promoting
-                  cultural heritage.
-                </p>
-                <p class="text-muted">
-                    Whether you're competing for the crown or supporting the cause, there's a place 
-                    for everyone in our mission to inspire and uplift.
-                </p>
-                <a href="contact.html" class="btn btn-primary btn-lg rounded-pill mt-3">
-                    Learn More
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Section: Picture and Write-Up -->
-<section class="py-5 bg-light">
-  <div class="container">
-      <div class="row align-items-center">
-          <!-- Image Section -->
-          <div class="col-md-6 mb-4 mb-md-0 wow animate__animated animate__fadeInLeft">
-              <img 
-                  src="https://media.istockphoto.com/id/172281008/photo/black-princess.jpg?s=612x612&w=0&k=20&c=g2gGM-j3q9aX7TAext57wy4PRuREJBTCWmEMGV3GO2M=" 
-                  alt="Empowerment" 
-                  class="img-fluid rounded shadow-lg"
-              >
-          </div>
-          <!-- Write-Up Section -->
-          <div class="col-md-6 wow animate__animated animate__fadeInRight">
-              <h2 class="mb-3">Empowerment Through Elegance</h2>
-              <p class="text-muted">
-               <strong>Global Unity:</strong>  Discover the journey of confidence, poise, and purpose with our pageant. 
-                  We aim to empower individuals to showcase their talent, beauty, and intellect 
-                  while making a meaningful impact on the community. Join us to be part of something extraordinary.
-              </p>
-              <p class="text-muted">
-                Empowerment: We provide a stage for young individuals to express themselves, build confidence, and pursue their
-                dreams.<br>
-                 We strive to create connections and foster friendships among contestants, promoting solidarity and
-                understanding on a global scale.
-              </p>
-              <a href="contact.html" class="btn btn-primary btn-lg rounded-pill mt-3">
-                  Learn More
-              </a>
-          </div>
-      </div>
-  </div>
-</section>
+        </footer>
 
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h5>About Us</h5>
-                    <p>Global Heritage Pageant celebrates diversity, empowers individuals, and promotes cultural understanding on a global scale.</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="index.html#contestants">Contestants</a></li>
-                        <li><a href="index.html#schedule">Schedule</a></li>
-                        <li><a href="index.html#sponsors">Sponsors</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                        <li><a href="register.html">Register</a></li>
-                        <li><a href="login.html">Login</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h5>Contact Us</h5>
-                    <p>Email: mrandmissglobalheritage@gmail.com</p>
-                    <p>Phone: +234 8123324204</p>
-                    <div class="social-icons mt-3">
-                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="text-center">
-                <p>&copy; 2025 Sweetsound Empire. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
-    <script>
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"
+            crossorigin="anonymous"></script>
+        <script>
         AOS.init({
             duration: 800,
             once: true,
         });
     </script>
-</body>
+    </body>
 </html>
