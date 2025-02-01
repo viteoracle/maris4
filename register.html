@@ -870,7 +870,7 @@ a {
             const password = document.getElementById('password').value;
 
             // Send registration data to the server
-            fetch('http://localhost:5000/api/auth/register', {
+            fetch('https://temp21.onrender.com/api/auth/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -907,7 +907,7 @@ a {
             const token = localStorage.getItem('token'); // Retrieve the token from local storage
 
             // Send transaction ID to the server
-            fetch('http://localhost:5000/api/auth/updatePaymentId', {
+            fetch('https://temp21.onrender.com/api/auth/updatePaymentId', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
